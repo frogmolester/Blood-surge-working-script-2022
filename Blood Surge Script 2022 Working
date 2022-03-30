@@ -1,0 +1,61 @@
+-- Made By MyROBLOXisbroken11
+--yw tho 
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.Position = UDim2.new(0.0356435776, 0, 0.678524375, 0)
+Main.Size = UDim2.new(0, 274, 0, 183)
+Main.Active = true
+Main.Draggable = true
+
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Size = UDim2.new(0, 274, 0, 38)
+TextLabel.Font = Enum.Font.SpecialElite
+TextLabel.Text = "shit ass game lmao"
+TextLabel.TextColor3 = Color3.fromRGB(85, 0, 0)
+TextLabel.TextSize = 27.000
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+TextButton.Position = UDim2.new(0.44890511, 0, 0.207650274, 0)
+TextButton.Size = UDim2.new(0, 151, 0, 145)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Fame Giver"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 20.000
+TextButton.MouseButton1Down:connect(function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.DeliverGrandma.CFrame
+    local RunService = game:GetService("RunService")
+
+    RunService.Stepped:connect(function()
+        game.ReplicatedStorage.Quest:FireServer("Delivery")
+        Wait()
+    end)
+end)
+
+TextButton_2.Parent = ScreenGui
+TextButton_2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+TextButton_2.Position = UDim2.new(0.0356435813, 0, 0.72859025, 0)
+TextButton_2.Size = UDim2.new(0, 123, 0, 145)
+TextButton_2.Font = Enum.Font.SourceSansBold
+TextButton_2.Text = "TP To Clan Reroll"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 20.000
+TextButton_2.MouseButton1Down:connect(function()
+    --sup fuckers this script was made by MyROBLOXisbroken11/ mr flim flam rah#1129
+    --your welcome bbgs
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1444.82715, 67.0207367, 396.817993, 0.0174632221, -8.56207905e-08, 0.999847531, 2.12526654e-08, 1, 8.52626556e-08, -0.999847531, 1.97604653e-08, 0.0174632221)
+end)
